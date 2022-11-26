@@ -1,0 +1,12 @@
+dbt_batch_demo:
+  outputs:
+    default:
+      type: bigquery
+      dataset: dbt_batch_demo
+      fixed_retries: 3
+      location: europe-west2
+      method: oauth
+      priority: interactive
+      project: rocketech-de-pgcp-sandbox
+      threads: 5
+      timeout_seconds: 3600
