@@ -1,4 +1,9 @@
 # GCP Batch for DBT
+An example to run DBT jobs using the GCP Batch services. 
+
+The purpose of this repo is to try out if Batch can be a drop-in replacement of the [KubernetesPodOperator](https://airflow.apache.org/docs/apache-airflow-providers-cncf-kubernetes/stable/operators.html) which requires k8 to run batch workload on Airflow.
+
+The main reason for considering a drop-in replacement is that the effort to test K8 operator locally e2e is very high because it is not a GCP service, and from experience there isn't an easy solution to get around this.
 
 ## Create service account
 
